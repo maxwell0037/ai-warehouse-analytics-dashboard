@@ -1,0 +1,7 @@
+machine_id,warehouse_id,machine_name,machine_type
+1,1,WH-A Sorter 1,Automated Sorter
+2,1,WH-A Sorter 2,Automated Sorter
+3,2,WH-B Sorter 1,Automated Sorter
+4,2,WH-B Sorter 2,Automated Sorter
+5,3,WH-C Sorter 1,Automated Sorter
+6,3,WH-C Sorter 2,Automated Sorter

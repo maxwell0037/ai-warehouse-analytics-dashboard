@@ -1,0 +1,4 @@
+warehouse_id,warehouse_name,city,region
+1,Warehouse A,Dallas,South
+2,Warehouse B,Chicago,Midwest
+3,Warehouse C,Atlanta,Southeast

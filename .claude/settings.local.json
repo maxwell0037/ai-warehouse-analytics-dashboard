@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(psql -d warehouse_analytics -f sql/02_load_data.sql)",
+      "Bash(psql -d warehouse_analytics)",
+      "Bash(psql -d warehouse_analytics -c ' *)",
+      "Bash(python3 scripts/generate_data.py)",
+      "Bash(psql -d warehouse_analytics -c \"TRUNCATE machine_downtime, labor, parcels, machines, carriers, shifts, warehouses RESTART IDENTITY CASCADE;\")",
+      "Bash(psql -d warehouse_analytics -f sql/03_kpi_queries.sql)",
+      "Bash(python3 -c \"import streamlit\")",
+      "Bash(python3 -c \"import plotly\")",
+      "Bash(python3 -c \"import psycopg2\")",
+      "Bash(python3 -c \"import pandas\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -m venv venv)",
+      "Bash(nohup venv/bin/streamlit run app/app.py --server.headless true --server.port 8501)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8501)",
+      "Bash(pkill -f \"streamlit run app/app.py\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8501)",
+      "Bash(../venv/bin/python3 -c ' *)",
+      "Bash(/Users/maxwellzhou/Desktop/AI-Warehouse-Analytics/venv/bin/python3 -c \"import plotly; print\\(plotly.__version__\\)\")",
+      "Bash(venv/bin/python3 -c ' *)",
+      "Bash(psql -d warehouse_analytics -f /tmp/query3.sql)",
+      "Bash(psql -d warehouse_analytics -f /tmp/query5.sql)",
+      "Bash(psql -d warehouse_analytics -f /tmp/query6.sql)",
+      "Bash(psql -d warehouse_analytics -f /tmp/query4.sql)",
+      "Bash(/Users/maxwellzhou/Desktop/AI-Warehouse-Analytics/venv/bin/python3 -c \"import streamlit; print\\(streamlit.__version__\\)\")",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8502)",
+      "WebSearch",
+      "Bash(pkill -f \"streamlit run /tmp/sorttest/test.py\")",
+      "Bash(env)",
+      "Bash(OPENAI_API_KEY=sk-invalid-test-key-00000000000000000000 venv/bin/python3 -c ' *)",
+      "Bash(awk '{print $2}')"
+    ]
+  }
+}
