@@ -16,13 +16,13 @@ This project simulates a parcel sorting hub and demonstrates how operational dat
 
 ## AI Operational Summary
 
-![AI Summary](screenshots/ai_summary.png)
+![AI Summary](screenshots/ask_ai1.png)
 
 ---
 
 ## Ask AI Assistant
 
-![Ask AI](screenshots/ask_ai.png)
+![Ask AI](screenshots/heat_map.png)
 
 ---
 
@@ -275,7 +275,3 @@ GitHub:
 https://github.com/maxwell0037
 
 ---
-
-# 📄 License
-
-This project is licensed under the MIT License.
